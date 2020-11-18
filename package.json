@@ -1,0 +1,25 @@
+{
+    "name": "delve-vscode",
+    "displayName": "Delve_VSCode",
+    "description": "Delve Syntax Highlighting for VSCode",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.51.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "delve",
+            "aliases": ["Delve", "delve"],
+            "extensions": [".delve"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "delve",
+            "scopeName": "",
+            "path": "./syntaxes/delve.tmLanguage.json"
+        }]
+    }
+}
