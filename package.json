@@ -1,8 +1,9 @@
 {
-    "name": "delve-vscode",
-    "displayName": "Delve_VSCode",
+    "name": "delve",
+    "icon": "delve.png",
+    "displayName": "Delve",
     "description": "Delve Syntax Highlighting for VSCode",
-    "version": "0.0.1",
+    "version": "1.0.1",
     "engines": {
         "vscode": "^1.51.0"
     },
@@ -12,14 +13,15 @@
     "contributes": {
         "languages": [{
             "id": "delve",
-            "aliases": ["Delve", "delve"],
             "extensions": [".delve"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
             "language": "delve",
-            "scopeName": "",
+            "scopeName": "source.delve",
             "path": "./syntaxes/delve.tmLanguage.json"
         }]
-    }
+    },
+    "publisher": "RelationalAI",
+    "repository": "https://github.com/RelationalAI-oss/Delve_VSCode"
 }

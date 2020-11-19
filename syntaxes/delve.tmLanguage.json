@@ -1,32 +1,124 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Delve",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.delve",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.delve",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.delve",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": ""
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.delveon",
+    "name": "Delve",
+    "patterns": [
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#comment"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [{
+                "name": "keyword.control.delve",
+                "match": "\\b(if|then|else|end|∀|exists|∃|and|or|implies|not|in|∈|true|false|forall|from|for|return|def|bound|entity|include|where|select)\\b"
+            }]
+        },
+        "strings": {
+            "name": "string.quoted.double.delve",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.delve",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "comment": {
+            "patterns": [
+                {
+                    "name": "comment.block.documentation.delve",
+                    "begin": "/\\*\\*(?!/)",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.delve"
+                        }
+                    },
+                    "end": "\\*/",
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.delve"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "#docblock"
+                        }
+                    ]
+                },
+                {
+                    "name": "comment.block.delve",
+                    "begin": "(/\\*)(?:\\s*((@)internal)(?=\\s|(\\*/)))?",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "punctuation.definition.comment.delve"
+                        },
+                        "2": {
+                            "name": "storage.type.internaldeclaration.delve"
+                        },
+                        "3": {
+                            "name": "punctuation.decorator.internaldeclaration.delve"
+                        }
+                    },
+                    "end": "\\*/",
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.delve"
+                        }
+                    }
+                },
+                {
+                    "begin": "(^[ \\t]+)?((//)(?:\\s*((@)internal)(?=\\s|$))?)",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "punctuation.whitespace.comment.leading.delve"
+                        },
+                        "2": {
+                            "name": "comment.line.double-slash.delve"
+                        },
+                        "3": {
+                            "name": "punctuation.definition.comment.delve"
+                        },
+                        "4": {
+                            "name": "storage.type.internaldeclaration.delve"
+                        },
+                        "5": {
+                            "name": "punctuation.decorator.internaldeclaration.delve"
+                        }
+                    },
+                    "end": "(?=$)",
+                    "contentName": "comment.line.double-slash.delve"
+                }
+            ]
+        },
+        "single-line-comment-consuming-line-ending": {
+            "begin": "(^[ \\t]+)?((//)(?:\\s*((@)internal)(?=\\s|$))?)",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.whitespace.comment.leading.delve"
+                },
+                "2": {
+                    "name": "comment.line.double-slash.delve"
+                },
+                "3": {
+                    "name": "punctuation.definition.comment.delve"
+                },
+                "4": {
+                    "name": "storage.type.internaldeclaration.delve"
+                },
+                "5": {
+                    "name": "punctuation.decorator.internaldeclaration.delve"
+                }
+            },
+            "end": "(?=^)",
+            "contentName": "comment.line.double-slash.delve"
+        }
+    },
+    "scopeName": "source.delve"
 }
