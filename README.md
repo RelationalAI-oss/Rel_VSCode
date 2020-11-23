@@ -27,3 +27,10 @@ Added `ic` as a keyword.
 ### 1.0.1
 
 Initial release.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Authors
+
+- [Mohammad Dashti](mailto:mohammad.dashti[at]relational[dot]ai)
