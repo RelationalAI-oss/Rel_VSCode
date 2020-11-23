@@ -16,7 +16,7 @@
         "keywords": {
             "patterns": [{
                 "name": "keyword.control.delve",
-                "match": "\\b(if|then|else|end|∀|exists|∃|and|or|implies|not|in|∈|true|false|forall|from|for|return|def|bound|entity|include|where|select)\\b"
+                "match": "\\b(if|then|else|end|∀|exists|∃|and|or|implies|not|in|∈|true|false|forall|from|for|return|def|bound|entity|include|where|select|ic)\\b"
             }]
         },
         "strings": {

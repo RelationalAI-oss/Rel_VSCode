@@ -3,7 +3,7 @@
     "icon": "delve.png",
     "displayName": "Delve",
     "description": "Delve Syntax Highlighting for VSCode",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "engines": {
         "vscode": "^1.51.0"
     },
