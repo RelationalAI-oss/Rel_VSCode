@@ -1,5 +1,9 @@
 # Delve VSCode Extension
 
+## Features
+
+This package provides the basic syntax highlighting for the Delve language.
+
 ## Create VSIX Package From Source
 
 Install `vsce` globally:
@@ -14,11 +18,11 @@ Create VSIX package:
 vsce package
 ```
 
-## Features
-
-This package provides the basic syntax highlighting for the Delve language.
-
 ## Release Notes
+
+### 1.0.4
+
+Minor improvements.
 
 ### 1.0.3
 
@@ -41,3 +45,4 @@ Initial release.
 ## Authors
 
 - [Mohammad Dashti](mailto:mohammad.dashti[at]relational[dot]ai)
+- [Amy Tabor](mailto:amy.tabor[at]relational[dot]ai)

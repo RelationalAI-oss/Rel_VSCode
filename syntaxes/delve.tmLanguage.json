@@ -154,7 +154,7 @@
           "patterns": [
             {
                 "name": "variable.parameter.delve",
-                "match": "(:[\\[_$[:alpha:]][\\[_$[:alnum:]]*)"
+                "match": "(:[\\[_$[:alpha:]](\\]|[_$[:alnum:]]*))"
             }
           ]
         },
