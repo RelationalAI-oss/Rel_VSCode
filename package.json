@@ -3,16 +3,32 @@
     "icon": "delve.png",
     "displayName": "Delve",
     "description": "Delve Syntax Highlighting for VSCode",
-    "version": "1.0.2",
+    "version": "1.0.3",
+    "author": {
+        "name": "Mohammad Dashti and Amy Tabor",
+        "email": "support@relational.ai"
+    },
     "engines": {
         "vscode": "^1.51.0"
     },
+    "keywords": [
+        "visual studio code",
+        "extension",
+        "delve language",
+        "syntax highlighter",
+        "delve syntax highlighter"
+    ],
     "categories": [
         "Programming Languages"
     ],
+    "activationEvents": [
+		"onLanguage:delve"
+	],
+    "main": "extension.js",
     "contributes": {
         "languages": [{
             "id": "delve",
+            "aliases": ["Delve", "delve"],
             "extensions": [".delve"],
             "configuration": "./language-configuration.json"
         }],

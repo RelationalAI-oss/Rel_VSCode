@@ -20,6 +20,13 @@ This package provides the basic syntax highlighting for the Delve language.
 
 ## Release Notes
 
+### 1.0.3
+
+- Improved syntax highlighting:
+  - different color for different groups of keywords
+  - highlighting column names
+- Added hover element for basic language constructs
+
 ### 1.0.2
 
 Added `ic` as a keyword.
