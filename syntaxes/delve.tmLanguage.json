@@ -9,6 +9,9 @@
             "include": "#comment"
         },
         {
+            "include": "#docstring"
+        },
+        {
             "include": "#single-line-comment-consuming-line-ending"
         },
         {
@@ -109,6 +112,15 @@
                     },
                     "end": "(?=$)",
                     "contentName": "comment.line.double-slash.delve"
+                }
+            ]
+        },
+        "docstring": {
+            "patterns": [
+                {
+                    "name": "comment.block.documentation.delve",
+                    "begin": "doc\"\"\"",
+                    "end": "\"\"\""
                 }
             ]
         },

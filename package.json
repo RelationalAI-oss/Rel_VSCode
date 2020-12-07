@@ -3,7 +3,7 @@
     "icon": "delve.png",
     "displayName": "Delve",
     "description": "Delve Syntax Highlighting for VSCode",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "author": {
         "name": "Mohammad Dashti and Amy Tabor",
         "email": "support@relational.ai"

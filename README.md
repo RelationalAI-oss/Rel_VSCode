@@ -20,9 +20,13 @@ vsce package
 
 ## Release Notes
 
+### 1.0.5
+
+ - Fixed issue #1: Syntax highlighting of docstring
+
 ### 1.0.4
 
-Minor improvements.
+ - Minor improvements.
 
 ### 1.0.3
 
@@ -33,11 +37,11 @@ Minor improvements.
 
 ### 1.0.2
 
-Added `ic` as a keyword.
+ - Added `ic` as a keyword.
 
 ### 1.0.1
 
-Initial release.
+ - Initial release.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
