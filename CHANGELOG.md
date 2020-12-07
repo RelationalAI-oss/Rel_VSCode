@@ -1,8 +1,12 @@
 # Change Log
 
+### 1.0.5
+
+ - Fixed issue #1: Syntax highlighting of docstring
+
 ### 1.0.4
 
-Minor improvements.
+ - Minor improvements.
 
 ### 1.0.3
 
