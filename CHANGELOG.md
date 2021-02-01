@@ -1,5 +1,10 @@
 # Change Log
 
+### 1.0.6
+
+ - Added support for `@auto_number`
+ - Fixed issue #3: Support formatting multi-line documentation comments to the line width
+
 ### 1.0.5
 
  - Fixed issue #1: Syntax highlighting of docstring
