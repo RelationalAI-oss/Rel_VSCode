@@ -3,7 +3,7 @@
         // symbol used for single line comment. Remove this entry if your language does not support line comments
         "lineComment": "//",
         // symbols used for start and end a block comment. Remove this entry if your language does not support block comments
-        "blockComment": [ "/*", "*/" ]
+        "blockComment": [ "doc\"\"\"", "\"\"\"", "/*", "*/" ] // the second pair of block comments are ignored. TODO: FIXE THIS. Re https://github.com/RelationalAI-oss/Delve_VSCode/issues/3
     },
     // symbols used as brackets
     "brackets": [

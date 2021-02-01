@@ -9,9 +9,6 @@
             "include": "#comment"
         },
         {
-            "include": "#docstring"
-        },
-        {
             "include": "#single-line-comment-consuming-line-ending"
         },
         {
@@ -92,6 +89,11 @@
                     }
                 },
                 {
+                  "name": "comment.block.documentation.delve",
+                  "begin": "doc\"\"\"",
+                  "end": "\"\"\""
+                },
+                {
                     "begin": "(^[ \\t]+)?((//)(?:\\s*((@)internal)(?=\\s|$))?)",
                     "beginCaptures": {
                         "1": {
@@ -112,15 +114,6 @@
                     },
                     "end": "(?=$)",
                     "contentName": "comment.line.double-slash.delve"
-                }
-            ]
-        },
-        "docstring": {
-            "patterns": [
-                {
-                    "name": "comment.block.documentation.delve",
-                    "begin": "doc\"\"\"",
-                    "end": "\"\"\""
                 }
             ]
         },
