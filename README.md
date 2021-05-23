@@ -1,8 +1,8 @@
-# Delve VSCode Extension
+# Rel VSCode Extension
 
 ## Features
 
-This package provides the basic syntax highlighting for the Delve language.
+This package provides the basic syntax highlighting for the Rel language.
 
 ## Create VSIX Package From Source
 
@@ -19,6 +19,11 @@ vsce package
 ```
 
 ## Release Notes
+
+### 1.0.7
+
+ - Renamed the langauge from Delve to Rel
+ - Files with .rel extension are also supported
 
 ### 1.0.6
 
