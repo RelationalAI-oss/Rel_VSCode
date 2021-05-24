@@ -22,7 +22,7 @@ vsce package
 
 ### 1.0.7
 
- - Renamed the langauge from Delve to Rel
+ - Renamed the language from Delve to Rel
  - Files with .rel extension are also supported
 
 ### 1.0.6
