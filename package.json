@@ -1,6 +1,6 @@
 {
     "name": "rel",
-    "icon": "rel.png",
+    "icon": "relationalai.png",
     "displayName": "Rel",
     "description": "Rel Syntax Highlighting for VSCode",
     "version": "1.0.7",
