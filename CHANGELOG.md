@@ -3,6 +3,7 @@
 ### 1.0.7
 
  - Renamed the langauge from Delve to Rel
+ - Updated logo
  - Files with .rel extension are also supported
 
 ### 1.0.6
