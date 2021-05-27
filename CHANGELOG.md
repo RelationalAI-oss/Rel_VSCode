@@ -1,10 +1,10 @@
 # Change Log
 
-### 1.0.7
+### 1.1.0
 
- - Renamed the langauge from Delve to Rel
+ - Renamed the language from Delve to Rel
  - Updated logo
- - Files with .rel extension are also supported
+ - Files with .rel extension are now also supported
 
 ### 1.0.6
 
