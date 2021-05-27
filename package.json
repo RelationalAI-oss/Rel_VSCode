@@ -1,9 +1,9 @@
 {
-    "name": "delve",
-    "icon": "delve.png",
-    "displayName": "Delve",
-    "description": "Delve Syntax Highlighting for VSCode",
-    "version": "1.0.6",
+    "name": "rel",
+    "icon": "relationalai.png",
+    "displayName": "Rel",
+    "description": "Rel Syntax Highlighting for VSCode",
+    "version": "1.1.0",
     "author": {
         "name": "Mohammad Dashti and Amy Tabor",
         "email": "support@relational.ai"
@@ -14,30 +14,30 @@
     "keywords": [
         "visual studio code",
         "extension",
-        "delve language",
+        "rel language",
         "syntax highlighter",
-        "delve syntax highlighter"
+        "rel syntax highlighter"
     ],
     "categories": [
         "Programming Languages"
     ],
     "activationEvents": [
-		"onLanguage:delve"
+		"onLanguage:rel"
 	],
     "main": "extension.js",
     "contributes": {
         "languages": [{
-            "id": "delve",
-            "aliases": ["Delve", "delve"],
-            "extensions": [".delve"],
+            "id": "rel",
+            "aliases": ["Rel", "rel"],
+            "extensions": [".rel", ".delve"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "delve",
-            "scopeName": "source.delve",
-            "path": "./syntaxes/delve.tmLanguage.json"
+            "language": "rel",
+            "scopeName": "source.rel",
+            "path": "./syntaxes/rel.tmLanguage.json"
         }]
     },
     "publisher": "RelationalAI",
-    "repository": "https://github.com/RelationalAI-oss/Delve_VSCode"
+    "repository": "https://github.com/RelationalAI-oss/Rel_VSCode"
 }

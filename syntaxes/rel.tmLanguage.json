@@ -1,6 +1,6 @@
 {
-    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.delveon",
-    "name": "Delve",
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Rel",
     "patterns": [
         {
             "include": "#strings"
@@ -35,12 +35,12 @@
     ],
     "repository": {
         "strings": {
-            "name": "string.quoted.double.delve",
+            "name": "string.quoted.double.rel",
             "begin": "\"",
             "end": "\"",
             "patterns": [
                 {
-                    "name": "constant.character.escape.delve",
+                    "name": "constant.character.escape.rel",
                     "match": "\\\\."
                 }
             ]
@@ -48,17 +48,17 @@
         "comment": {
             "patterns": [
                 {
-                    "name": "comment.block.documentation.delve",
+                    "name": "comment.block.documentation.rel",
                     "begin": "/\\*\\*(?!/)",
                     "beginCaptures": {
                         "0": {
-                            "name": "punctuation.definition.comment.delve"
+                            "name": "punctuation.definition.comment.rel"
                         }
                     },
                     "end": "\\*/",
                     "endCaptures": {
                         "0": {
-                            "name": "punctuation.definition.comment.delve"
+                            "name": "punctuation.definition.comment.rel"
                         }
                     },
                     "patterns": [
@@ -68,28 +68,28 @@
                     ]
                 },
                 {
-                    "name": "comment.block.delve",
+                    "name": "comment.block.rel",
                     "begin": "(/\\*)(?:\\s*((@)internal)(?=\\s|(\\*/)))?",
                     "beginCaptures": {
                         "1": {
-                            "name": "punctuation.definition.comment.delve"
+                            "name": "punctuation.definition.comment.rel"
                         },
                         "2": {
-                            "name": "storage.type.internaldeclaration.delve"
+                            "name": "storage.type.internaldeclaration.rel"
                         },
                         "3": {
-                            "name": "punctuation.decorator.internaldeclaration.delve"
+                            "name": "punctuation.decorator.internaldeclaration.rel"
                         }
                     },
                     "end": "\\*/",
                     "endCaptures": {
                         "0": {
-                            "name": "punctuation.definition.comment.delve"
+                            "name": "punctuation.definition.comment.rel"
                         }
                     }
                 },
                 {
-                  "name": "comment.block.documentation.delve",
+                  "name": "comment.block.documentation.rel",
                   "begin": "doc\"\"\"",
                   "end": "\"\"\""
                 },
@@ -97,23 +97,23 @@
                     "begin": "(^[ \\t]+)?((//)(?:\\s*((@)internal)(?=\\s|$))?)",
                     "beginCaptures": {
                         "1": {
-                            "name": "punctuation.whitespace.comment.leading.delve"
+                            "name": "punctuation.whitespace.comment.leading.rel"
                         },
                         "2": {
-                            "name": "comment.line.double-slash.delve"
+                            "name": "comment.line.double-slash.rel"
                         },
                         "3": {
-                            "name": "punctuation.definition.comment.delve"
+                            "name": "punctuation.definition.comment.rel"
                         },
                         "4": {
-                            "name": "storage.type.internaldeclaration.delve"
+                            "name": "storage.type.internaldeclaration.rel"
                         },
                         "5": {
-                            "name": "punctuation.decorator.internaldeclaration.delve"
+                            "name": "punctuation.decorator.internaldeclaration.rel"
                         }
                     },
                     "end": "(?=$)",
-                    "contentName": "comment.line.double-slash.delve"
+                    "contentName": "comment.line.double-slash.rel"
                 }
             ]
         },
@@ -121,28 +121,28 @@
             "begin": "(^[ \\t]+)?((//)(?:\\s*((@)internal)(?=\\s|$))?)",
             "beginCaptures": {
                 "1": {
-                    "name": "punctuation.whitespace.comment.leading.delve"
+                    "name": "punctuation.whitespace.comment.leading.rel"
                 },
                 "2": {
-                    "name": "comment.line.double-slash.delve"
+                    "name": "comment.line.double-slash.rel"
                 },
                 "3": {
-                    "name": "punctuation.definition.comment.delve"
+                    "name": "punctuation.definition.comment.rel"
                 },
                 "4": {
-                    "name": "storage.type.internaldeclaration.delve"
+                    "name": "storage.type.internaldeclaration.rel"
                 },
                 "5": {
-                    "name": "punctuation.decorator.internaldeclaration.delve"
+                    "name": "punctuation.decorator.internaldeclaration.rel"
                 }
             },
             "end": "(?=^)",
-            "contentName": "comment.line.double-slash.delve"
+            "contentName": "comment.line.double-slash.rel"
         },
         "deprecated-temporary": {
           "patterns": [
             {
-              "name": "keyword.other.delve",
+              "name": "keyword.other.rel",
               "match": "@inspect"
             }
           ]
@@ -150,7 +150,7 @@
         "operators": {
           "patterns": [
             {
-              "name": "keyword.other.delve",
+              "name": "keyword.other.rel",
               "match": "(\\b(if|then|else|end|and|or|not|eq|neq|lt|lt_eq|gt|gt_eq)\\b)|(\\+|\\-|\\*|\\/|÷|\\^|\\%|\\=|\\!\\=|≠|\\<|\\<\\=|≤|\\>|\\>\\=|≥|\\&)"
             }
           ]
@@ -158,7 +158,7 @@
         "symbols": {
           "patterns": [
             {
-                "name": "variable.parameter.delve",
+                "name": "variable.parameter.rel",
                 "match": "(:[\\[_$[:alpha:]](\\]|[_$[:alnum:]]*))"
             }
           ]
@@ -166,7 +166,7 @@
         "keywords": {
           "patterns": [
             {
-              "name": "keyword.control.delve",
+              "name": "keyword.control.rel",
               "match": "(\\b(def|entity|bound|include|ic|forall|exists|∀|∃|return)\\b)|(((\\<)?\\|(\\>)?)|∀|∃)"
             }
           ]
@@ -174,7 +174,7 @@
         "otherkeywords": {
           "patterns": [
             {
-              "name": "keyword.other.delve",
+              "name": "keyword.other.rel",
               "match": "\\s*(@inline)\\s*|\\s*(@auto_number)\\s*|\\s*(function)\\s|(\\b(implies|select|from|∈|where|for|in)\\b)|(((\\<)?\\|(\\>)?)|∈)"
             }
           ]
@@ -182,7 +182,7 @@
         "types": {
           "patterns": [
             {
-              "name": "entity.name.type.delve",
+              "name": "entity.name.type.rel",
               "match": "(\\b(Symbol|Char|Bool|Rational|FixedDecimal|Float16|Float32|Float64|Int8|Int16|Int32|Int64|Int128|UInt8|UInt16|UInt32|UInt64|UInt128|Date|DateTime|Day|Week|Month|Year|Nanosecond|Microsecond|Millisecond|Second|Minute|Hour|FilePos|HashValue|AutoNumberValue)\\b)"
             }
           ]
@@ -190,11 +190,11 @@
         "constants": {
           "patterns": [
             {
-              "name": "constant.language.delve",
+              "name": "constant.language.rel",
               "match": "(\\b(true|false)\\b)"
             }
           ]
         }
     },
-    "scopeName": "source.delve"
+    "scopeName": "source.rel"
 }

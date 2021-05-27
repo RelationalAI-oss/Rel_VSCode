@@ -1,5 +1,11 @@
 # Change Log
 
+### 1.1.0
+
+ - Renamed the language from Delve to Rel
+ - Updated logo
+ - Files with .rel extension are now also supported
+
 ### 1.0.6
 
  - Added support for `@auto_number`

@@ -1,11 +1,11 @@
 "use strict";
 const vscode = require("vscode");
 
-const delve_core = require('./delve-core.js');
-// const delve_library = require('./delve-library.js');
+const rel_core = require('./rel-core.js');
+// const rel_library = require('./rel-library.js');
 
 function activate(context) {
-    const disposable = vscode.languages.registerHoverProvider(['delve'], {
+    const disposable = vscode.languages.registerHoverProvider(['rel'], {
         provideHover(document, position, token) {
             let range = document.getWordRangeAtPosition(position);
             let word = document.getText(range);
@@ -17,8 +17,8 @@ function activate(context) {
                 if (word2[0] == '@') word = word2;
             }
 
-            let hoverText = delve_core.map[word];
-            // if (hoverText === undefined) hoverText = delve_library.map[word];
+            let hoverText = rel_core.map[word];
+            // if (hoverText === undefined) hoverText = rel_library.map[word];
 
             return new vscode.Hover(hoverText);
         }
