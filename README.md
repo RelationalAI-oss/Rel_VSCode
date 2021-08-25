@@ -23,6 +23,7 @@ vsce package
 ### 1.1.1
 
  - Added support for `module`
+ - Added alternative coloring for `end` when used at the beginning of a line to better support module syntax
 
 ### 1.1.0
 
