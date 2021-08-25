@@ -1,5 +1,9 @@
 # Change Log
 
+### 1.1.1
+
+ - Added support for `module`
+
 ### 1.1.0
 
  - Renamed the language from Delve to Rel
