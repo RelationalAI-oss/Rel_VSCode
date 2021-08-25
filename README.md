@@ -20,7 +20,12 @@ vsce package
 
 ## Release Notes
 
-### 1.0.7
+### 1.1.1
+
+ - Added support for `module`
+ - Added alternative coloring for `end` when used at the beginning of a line to better support module syntax
+
+### 1.1.0
 
  - Renamed the language from Delve to Rel
  - Updated logo

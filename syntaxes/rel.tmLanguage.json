@@ -151,7 +151,7 @@
           "patterns": [
             {
               "name": "keyword.other.rel",
-              "match": "(\\b(if|then|else|end|and|or|not|eq|neq|lt|lt_eq|gt|gt_eq)\\b)|(\\+|\\-|\\*|\\/|÷|\\^|\\%|\\=|\\!\\=|≠|\\<|\\<\\=|≤|\\>|\\>\\=|≥|\\&)"
+              "match": "(\\b(if|then|else|and|or|not|eq|neq|lt|lt_eq|gt|gt_eq)\\b)|(\\+|\\-|\\*|\\/|÷|\\^|\\%|\\=|\\!\\=|≠|\\<|\\<\\=|≤|\\>|\\>\\=|≥|\\&)|\\s+(end)"
             }
           ]
         },
@@ -167,7 +167,7 @@
           "patterns": [
             {
               "name": "keyword.control.rel",
-              "match": "(\\b(def|entity|bound|include|ic|forall|exists|∀|∃|return)\\b)|(((\\<)?\\|(\\>)?)|∀|∃)"
+              "match": "(\\b(def|entity|bound|include|ic|forall|exists|∀|∃|return|module|^end)\\b)|(((\\<)?\\|(\\>)?)|∀|∃)"
             }
           ]
         },
